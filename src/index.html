@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Effect</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <div id="img"class="">
+    <img src="./img/img.jpg" alt="">
+  </div>
+
+  <section class="sec1" id="pre">
+    <div class="content">
+      <h1>Welcome to <br>JFélixZúñiga</h1>
+    </div>
+    <a href="#next">Next</a>
+  </section>
+  <section class="sec2" id="next">
+    <div class="content2">
+      <h1>don't forget to</h1>
+      <h3>like, suscribe and share.</h3>
+    </div>
+    <a href="#pre">previous</a>
+  </section>
+  <script>
+    var i = document.querySelector('#img');
+    i.classList='pre';
+
+    document.links[0].addEventListener('click', function(){
+      i.classList='next';
+    })
+    document.links[1].addEventListener('click', function(){
+      i.classList='pre';
+    })
+  </script>
+
+</body>
+</html>
